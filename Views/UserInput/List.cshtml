@@ -1,0 +1,10 @@
+<!-- Views/UserInput/List.cshtml -->
+@model IEnumerable<SimpleMvcApp.Models.UserInput>
+
+<h2>Saved Inputs</h2>
+<ul>
+    @foreach (var input in Model)
+    {
+        <li>@input.InputText</li>
+    }
+</ul>
